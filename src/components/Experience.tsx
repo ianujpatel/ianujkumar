@@ -5,11 +5,12 @@ import { useRef } from "react";
 
 const experiences = [
   {
-    role: "Frontend Developer",
-    company: "Tech Solutions Inc.",
-    period: "2024 — Present",
-    description: "Leading the development of highly interactive, high-performance web applications using React, Next.js, and Framer Motion. Architecting scalable design systems.",
-    accent: "139,92,246", // violet
+    role: "Founder & Full-Stack Developer",
+    company: "DzinScript",
+    period: "2026 — Present",
+    description:
+    "Building premium websites and full-stack web applications for startups and businesses using the MERN stack and Next.js. Specializing in responsive UI/UX, admin dashboards, authentication, Cloudinary integration, and scalable web solutions.",
+    accent: "139,92,246",// Violet
   },
   {
     role: "Freelance Web Developer",
