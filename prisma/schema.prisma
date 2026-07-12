@@ -1,0 +1,48 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id               String   @id @default(cuid()) @map("_id")
+  title            String
+  shortDescription String
+  fullDescription  String
+  techStack        String
+  liveUrl          String?
+  githubUrl        String?
+  category         String
+  tag              String
+  year             String
+  accent           String   @default("139,92,246")
+  accentHex        String   @default("#8b5cf6")
+  gradFrom         String   @default("#7c3aed")
+  gradTo           String   @default("#06b6d4")
+  featured         Boolean  @default(false)
+  published        Boolean  @default(true)
+  displayOrder     Int      @default(0)
+  image            String   // thumbnail URL
+  images           String   // JSON string of multiple project image URLs
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model Review {
+  id        String   @id @default(cuid()) @map("_id")
+  name      String
+  rating    Int
+  message   String
+  approved  Boolean  @default(false)
+  date      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
