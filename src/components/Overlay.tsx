@@ -337,9 +337,9 @@ export default function Overlay({ scrollYProgress }: OverlayProps) {
             variants={itemVariants}
             className="mt-10 flex flex-wrap justify-center gap-3"
           >
-            <StatPill value="50+" label="Projects" color="167,139,250" />
-            <StatPill value="5yr" label="Experience" color="94,234,212" />
-            <StatPill value="100%" label="Client Sat." color="251,191,36" />
+            <StatPill value="10+ Projects" label="" color="167,139,250" />
+            <StatPill value="Full Stack Engineer" label="" color="94,234,212" />
+            <StatPill value="Freelance Ready" label="" color="251,191,36" />
           </motion.div>
         </motion.div>
       </motion.section>
